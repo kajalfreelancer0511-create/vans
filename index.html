@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization -->
+  <title>Vanshika Bansal | Dream Big • Create More • Smile Always</title>
+  <meta name="description" content="Personal portfolio and digital scrapbook of Vanshika Bansal, a creative and friendly 9-year-old artist and creator from Firozabad. Exploring her drawings, 3D pen art, family memories, and skating adventures.">
+  <meta name="keywords" content="Vanshika Bansal, Vanshika, Portfolio, 3D Pen Creations, Kids Art, St. John's Senior Secondary School Firozabad, Skating, Children portfolio">
+  <meta name="author" content="Vanshika Bansal">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind CSS Configuration for custom theme colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            themePink: '#FF69B4',
+            themeBlue: '#4FC3F7',
+            themePurple: '#BA68C8',
+            themeYellow: '#FFD54F',
+            themeGreen: '#81C784',
+            pastelPink: '#FFF0F5',
+            pastelBlue: '#E0F7FA',
+            pastelPurple: '#F3E5F5',
+            pastelYellow: '#FFFDE7',
+            pastelGreen: '#E8F5E9',
+            warmBackground: '#FFF9F2',
+          },
+          fontFamily: {
+            fredoka: ['Fredoka', 'sans-serif'],
+            comfortaa: ['Comfortaa', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons for Playful Details -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- ESM Importmap for Native Browser Modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "framer-motion": "https://esm.sh/framer-motion@10.16.4?external=react"
+      }
+    }
+  </script>
+</head>
+<body class="bg-warmBackground selection:bg-themePink selection:text-white">
+  
+  <!-- Application Root -->
+  <div id="root"></div>
+
+  <!-- React ESM Application Execution -->
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
